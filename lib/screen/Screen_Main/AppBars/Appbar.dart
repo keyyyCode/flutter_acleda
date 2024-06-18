@@ -1,7 +1,5 @@
-// import 'package:bank/screen/Screen_Main/list_drawer.dart';
+import 'package:bank/screen/BoxScroll/favorite.dart';
 import 'package:bank/screen/GridBox/Qr_me/ScreenQr.dart';
-import 'package:bank/screen/GridBox/loan.dart';
-// import 'package:bank/screen/scanners/main_scan.dart';
 import 'package:flutter/material.dart';
 
 AppBar appBar(context) {
@@ -30,7 +28,7 @@ AppBar appBar(context) {
           Navigator.push(
             context,
             MaterialPageRoute(
-              builder: (context) => Loans(),
+              builder: (context) => Favorites(),
             ),
           );
         },
@@ -71,8 +69,8 @@ AppBar appBar(context) {
           child: Image.asset(
             'assets/icons/body/acledalogofull.png',
             fit: BoxFit.cover,
-            width: 200, // Adjust the width as needed
-            height: 40, // Adjust the height as needed
+            width: 200,
+            height: 40,
           ),
         ),
       ],

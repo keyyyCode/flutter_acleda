@@ -1,4 +1,4 @@
-import 'package:bank/screen/GridBox/account.dart';
+import 'package:bank/screen/GridBox/loan.dart';
 import 'package:bank/screen/Screen_Main/main_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -103,8 +103,7 @@ class _QuickCashScreenState extends State<Quick_Cush> {
                   ),
                   child: const Card(
                     child: Padding(
-                      padding:
-                          EdgeInsets.only(top: 16, left: 16, bottom: 16),
+                      padding: EdgeInsets.only(top: 16, left: 16, bottom: 16),
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
@@ -127,7 +126,7 @@ class _QuickCashScreenState extends State<Quick_Cush> {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => ScreenAccount(),
+                      builder: (context) => Loans(),
                     ),
                   );
                 },
@@ -147,8 +146,7 @@ class _QuickCashScreenState extends State<Quick_Cush> {
                   ),
                   child: const Card(
                     child: Padding(
-                      padding:
-                          EdgeInsets.only(top: 16, left: 16, bottom: 16),
+                      padding: EdgeInsets.only(top: 16, left: 16, bottom: 16),
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
@@ -186,7 +184,8 @@ class _QuickCashScreenState extends State<Quick_Cush> {
         iconTheme: const IconThemeData(color: Colors.white),
         actions: [
           IconButton(
-            icon: Image.asset('assets/icons/body/acleda.png', width: 33, height: 33),
+            icon: Image.asset('assets/icons/body/acleda.png',
+                width: 33, height: 33),
             onPressed: () => Navigator.pop(
               context,
               MaterialPageRoute(builder: (context) => const HomepageScreen()),

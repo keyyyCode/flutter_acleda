@@ -2,15 +2,13 @@ import 'package:bank/screen/GridBox/Account/Accounts.dart';
 import 'package:flutter/material.dart';
 import 'package:bank/screen/BoxScroll/exchange.dart';
 import 'package:bank/screen/BoxScroll/favorite.dart';
-
-import 'package:bank/screen/GridBox/account.dart';
 import 'package:bank/screen/GridBox/deposite.dart';
 import 'package:bank/screen/GridBox/loan.dart';
 import 'package:bank/screen/GridBox/mobiletop_up/mobile_topup.dart';
 import 'package:bank/screen/GridBox/pay_me.dart';
 import 'package:bank/screen/GridBox/payment.dart';
-import 'package:bank/screen/GridBox/quick_cush.dart';
-import 'package:bank/screen/GridBox/scan_qr.dart';
+import 'package:bank/screen/GridBox/quickcush.dart';
+import 'package:bank/screen/GridBox/scanqr.dart';
 import 'package:bank/screen/GridBox/transfer.dart';
 
 class HomeScreenData {
@@ -43,7 +41,7 @@ class HomeScreenData {
       name: "Scan QR",
       // icon: Icons.qr_code,
       assetPath: 'assets/icons/body/scan.png',
-      route: ScreenAccount(),
+      route: Scan_Qr(),
     ),
     GridBox(
       name: "Accounts",
@@ -84,7 +82,7 @@ class DrawerData {
       name: 'Country and Language',
       // icon: Icons.location_city,
       assetPath: 'assets/icons/menu/country.png',
-      route: ScreenAccount(),
+      route: Loans(),
     ),
     GridBox(
       name: 'Settings',
@@ -144,7 +142,7 @@ class DrawerData {
       name: 'Help',
       // icon: Icons.question_answer,
       assetPath: 'assets/icons/menu/question.png',
-      route: Favorites(),
+      route: const Favorites(),
     ),
   ];
 }
