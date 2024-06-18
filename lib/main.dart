@@ -1,8 +1,8 @@
-
-import 'package:bank/screen/Screen_drawer/main_screen.dart';
+import 'package:bank/screen/Screen_Main/main_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(MainApp());
+
 class MainApp extends StatelessWidget {
   const MainApp({super.key});
 
@@ -13,7 +13,7 @@ class MainApp extends StatelessWidget {
       theme: ThemeData(
         scaffoldBackgroundColor: Colors.white,
       ),
-      home: HomepageSreen(),
+      home: HomepageScreen(),
     );
   }
 }
